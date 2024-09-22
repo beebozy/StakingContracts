@@ -79,7 +79,7 @@ contract StakeERC is ERC20 {
         IERC20(tokenAddress).safeTransfer(recipient, rewardAmount);
     }
 
-    function unstake(uint amount) external {
+   /* function unstake(uint amount) external {
         require(balances[msg.sender] >= amount, "Insufficient staked balance");
 
         // Calculate and pay reward before unstaking
@@ -94,4 +94,5 @@ contract StakeERC is ERC20 {
             trackTime[msg.sender] = 0;
         }
     }
+    */
 }
